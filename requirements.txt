@@ -1,0 +1,7 @@
+pip uninstall tensorflow tensorflow-gpu keras keras-preprocessing tensorflow-hub
+conda create -n brain_env python=3.10 -y
+conda activate brain_env
+pip install tensorflow==2.10.0 keras==2.10 tensorflow-hub flask
+pip uninstall numpy
+pip install numpy==1.23.5
+pip install Pillow

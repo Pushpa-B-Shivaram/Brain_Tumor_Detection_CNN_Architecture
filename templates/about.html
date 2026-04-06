@@ -1,0 +1,17 @@
+{% extends "base.html" %} {% block content %}
+
+<div>
+    <div>
+        <img src="/static/imagesofhome/I3.png" alt width="1520" height="500" style="margin-left: -18.5%;">
+    </div>
+</div>
+<br><br>
+<div>
+    <h1><b>Overview of this project:-</b></h1>
+    <p style="font-size: 20px; text-align: justify;">This project is a comprehensive approach to brain tumor detection utilizing Convolutional Neural Networks (CNNs) and TensorFlow, an open-source machine learning framework. The project begins by preprocessing the dataset of MRI images using an ImageDataGenerator from TensorFlow's Keras. The MobileNetV2 model, pre-trained and hosted on TensorFlow Hub, serves as the foundation for the CNN architecture. The CNN is trained to classify brain tumor presence based on the provided MRI images, using a binary prediction approach.
+<br>
+        The training process involves 15 epochs, during which the model's accuracy and loss are continuously evaluated. The resulting trained model achieves an accuracy of approximately 94.95% on the validation set. To assess the model's performance further, a confusion matrix is generated using the trained model and a test set. The confusion matrix provides insights into the model's ability to correctly predicted brain tumor presence, revealing a promising performance with a relatively low number of false positives and false negatives.
+        <br>
+        Overall, this project successfully demonstrates the potential of CNNs and transfer learning in medical image analysis, specifically for brain tumor prediction. The approach showcases the importance of leveraging pre-trained models like MobileNetV2 and effectively fine-tuning them for the task at hand. The trained model can be employed as a crucial tool in aiding healthcare professionals for early brain tumor detection, potentially leading to improved patient outcomes and personalized treatment strategies. Further refinements and advancements in the model and dataset could continually enhance its accuracy and reliability, making a substantial impact in the medical field.   </p>  
+</div>
+{% endblock %}
